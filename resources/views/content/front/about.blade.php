@@ -22,9 +22,9 @@
             <div class="row g-4 align-items-center">
                 <div class="col-lg-6">
                     <div class="ps-lg-3">
-                        <h2 class="split">{{ __('History of :organisation', ['organisation' => 'JCI Benin']) }}</h2>
+                        <h2 class="split">{{ __('History of :organisation', ['organisation' => optional($organisation)->nameOr]) }}</h2>
                         <p class="mb-0 wow fadeInUp" data-wow-delay=".6s">
-                            {{ __('The History of JCI Benin') }}
+                            {{ __('The History of :organisation', ['organisation' => optional($organisation)->nameOr]) }}
                         </p>
                     </div>
                 </div>
@@ -32,7 +32,7 @@
                     <div class="ps-lg-3">
                         <h2 class="split">{{ __('History of :organisation', ['organisation' => optional($organisation)->nameOr]) }}</h2>
                         <p class="mb-0 wow fadeInUp" data-wow-delay=".6s">
-                            {{ optional($organisation)->descriptionOr }}
+                            {{ __('The History of :organisation', ['organisation' => optional($organisation)->nameOr]) }}
                         </p>
                     </div>
                 </div>
