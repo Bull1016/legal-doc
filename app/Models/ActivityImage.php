@@ -1,0 +1,40 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
+
+class ActivityImage extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'activity_id',
+        'image_path',
+    ];
+
+    protected static function booted()
+    {
+        self::creating(function ($instance) {
+            $instance->string_id = Str::uuid();
+        });
+
+        self::updating(function ($instance) {
+            if (!$instance->string_id) {
+                $instance->string_id = Str::uuid();
+            }
+        });
+    }
+
+    public function getRouteKeyName()
+    {
+        return 'string_id';
+    }
+
+    public function activity()
+    {
+        return $this->belongsTo(Activity::class);
+    }
+}
