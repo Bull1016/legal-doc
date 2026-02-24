@@ -130,9 +130,9 @@
                         <div class="row row-bordered overflow-visible g-0">
                             <div class="dropdown-shortcuts-item col">
                                 <span class="dropdown-shortcuts-icon rounded-circle mb-3">
-                                    <i class="icon-base ti tabler-list-details icon-26px text-heading"></i>
+                                    <i class="icon-base ti tabler-file-text icon-26px text-heading"></i>
                                 </span>
-                                <a href="{{ route('activities.index') }}" class="stretched-link">@lang('Documents')</a>
+                                <a href="{{ route('documents.index') }}" class="stretched-link">@lang('Documents')</a>
                             </div>
                             <div class="dropdown-shortcuts-item col">
                                 <span class="dropdown-shortcuts-icon rounded-circle mb-3">

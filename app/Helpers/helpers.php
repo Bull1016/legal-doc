@@ -145,6 +145,12 @@ if (!function_exists('create_update_permissions')) {
       ['name' => 'documents.edit'],
       ['name' => 'documents.destroy'],
 
+      // MY REQUESTS
+      ['name' => 'my-requests.index'],
+      ['name' => 'my-requests.create'],
+      ['name' => 'my-requests.edit'],
+      ['name' => 'my-requests.destroy'],
+
       // USERS
       ['name' => 'users.index'],
       ['name' => 'users.create'],

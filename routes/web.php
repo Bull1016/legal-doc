@@ -14,11 +14,6 @@ Route::get('/lang2/{locale}', [LanguageController::class, 'swap'])->name('langua
 
 // GUEST
 Route::get('/', [FrontController::class, 'index'])->name('home');
-Route::get('/about', [FrontController::class, 'about'])->name('about');
-Route::get('/projects-and-activities', [FrontController::class, 'projectsAndActivities'])->name('projects-and-activities');
-Route::get('/cdl', [FrontController::class, 'cdl'])->name('cdl');
-Route::get('/pasts-president', [FrontController::class, 'pastsPresident'])->name('pasts-president');
-Route::get('/contact', [FrontController::class, 'contact'])->name('contact');
 
 Route::prefix('auth')->group(function () {
   Route::get('/register', [Register::class, 'index'])->name('register');
@@ -36,13 +31,12 @@ Route::middleware('auth')->group(function () {
 
   require __DIR__ . '/menus/organisation.php';
   require __DIR__ . '/menus/members.php';
-  require __DIR__ . '/menus/agendas.php';
-  require __DIR__ . '/menus/activities.php';
-  require __DIR__ . '/menus/exercices.php';
+  require __DIR__ . '/menus/documents.php';
+  require __DIR__ . '/menus/my-requests.php';
   require __DIR__ . '/menus/country.php';
   require __DIR__ . '/menus/town.php';
-  require __DIR__ . '/menus/partners.php';
   require __DIR__ . '/menus/users.php';
+  require __DIR__ . '/menus/partners.php';
   require __DIR__ . '/menus/position.php';
 
   Route::post('/auth/logout', [Login::class, 'logout'])->name('logout');
