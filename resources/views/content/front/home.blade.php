@@ -20,78 +20,8 @@
                             <h1 data-aos="fade-left" data-aos-duration="900">Injury Compensation Starts Here: Proven Legal Representation</h1>
                             <p data-aos="fade-left" data-aos-duration="1000">Our team of dedicated & experienced attorneys is committed to guiding you through this difficult time, we believe in empowering our clients.</p>
                           <div class="div" data-aos="fade-left" data-aos-duration="1200">
-                            <a href="contact1.html" class="welcome6-btn">Schedule A Consultation <i class="fa-light fa-arrow-right"></i></a>
-                            <a href="contact2.html" class="welcome7-btn">Learn More <i class="fa-light fa-arrow-right"></i></a>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2"></div>
-                    <div class="col-lg-4" >
-                        <div class="welcome6-elements-area">
-                            <div class="polygon-author aniamtion-key-1" style="background-image: url({{ asset('front/assets/img/elements/elementor33.svg') }}); background-position: center; background-repeat: no-repeat; background-size: cover; display: inline-block;">
-                                <div class="polygon-arrow">
-                                    <span><a href="contact1.html"><i class="fa-regular fa-arrow-right"></i></a></span>
-                                <a href="contact1.html">Free Case Review</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="welcome6-section-area">
-            <img src="{{ asset('front/assets/img/images/homepage6-bg.png') }}" alt="" class="homepage6-bg">
-            <div class="lawer-images">
-                <img src="{{ asset('front/assets/img/icons/law-img7.png') }}" alt="" class="law">
-                <img src="{{ asset('front/assets/img/bacground/Polygon1.png') }}" alt="" class="Polygon1">
-                <img src="{{ asset('front/assets/img/bacground/Polygon2.png') }}" alt="" class="Polygon2">
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="welcome6-header-area">
-                            <span data-aos="fade-left" data-aos-duration="800">Dedicated Personal Injury Representation</span>
-                            <h1 data-aos="fade-left" data-aos-duration="900">Injury Compensation Starts Here: Proven Legal Representation</h1>
-                            <p data-aos="fade-left" data-aos-duration="1000">Our team of dedicated & experienced attorneys is committed to guiding you through this difficult time, we believe in empowering our clients.</p>
-                          <div class="div" data-aos="fade-left" data-aos-duration="1200">
-                            <a href="contact1.html" class="welcome6-btn">Schedule A Consultation <i class="fa-light fa-arrow-right"></i></a>
-                            <a href="contact2.html" class="welcome7-btn">Learn More <i class="fa-light fa-arrow-right"></i></a>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2"></div>
-                    <div class="col-lg-4" >
-                        <div class="welcome6-elements-area">
-                            <div class="polygon-author aniamtion-key-1" style="background-image: url({{ asset('front/assets/img/elements/elementor33.svg') }}); background-position: center; background-repeat: no-repeat; background-size: cover; display: inline-block;">
-                                <div class="polygon-arrow">
-                                    <span><a href="contact1.html"><i class="fa-regular fa-arrow-right"></i></a></span>
-                                <a href="contact1.html">Free Case Review</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="welcome6-section-area">
-            <img src="{{ asset('front/assets/img/images/homepage6-bg.png') }}" alt="" class="homepage6-bg">
-            <div class="lawer-images">
-                <img src="{{ asset('front/assets/img/icons/law-img7.png') }}" alt="" class="law">
-                <img src="{{ asset('front/assets/img/bacground/Polygon1.png') }}" alt="" class="Polygon1">
-                <img src="{{ asset('front/assets/img/bacground/Polygon2.png') }}" alt="" class="Polygon2">
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="welcome6-header-area">
-                            <span data-aos="fade-left" data-aos-duration="800">Dedicated Personal Injury Representation</span>
-                            <h1 data-aos="fade-left" data-aos-duration="900">Injury Compensation Starts Here: Proven Legal Representation</h1>
-                            <p data-aos="fade-left" data-aos-duration="1000">Our team of dedicated & experienced attorneys is committed to guiding you through this difficult time, we believe in empowering our clients.</p>
-                          <div class="div" data-aos="fade-left" data-aos-duration="1200">
-                            <a href="contact1.html" class="welcome6-btn">Schedule A Consultation <i class="fa-light fa-arrow-right"></i></a>
-                            <a href="contact2.html" class="welcome7-btn">Learn More <i class="fa-light fa-arrow-right"></i></a>
+                            <a href="{{ route('login') }}" class="welcome6-btn">{{ __('Login') }} <i class="fa-light fa-arrow-right"></i></a>
+                            <a href="{{ route('register') }}" class="welcome7-btn">{{ __('Register') }} <i class="fa-light fa-arrow-right"></i></a>
                           </div>
                         </div>
                     </div>
@@ -121,7 +51,7 @@
                         <span data-aos="fade-right" data-aos-duration="800">About Us</span>
                         <h2 data-aos="fade-right" data-aos-duration="1000">Your Recovery: Personalized & Support for Injury Cases</h2>
                         <p data-aos="fade-right" data-aos-duration="1200">Our team of dedicated & experienced attorneys is committed to guiding you through this difficult time, we believe in empowering our clients.</p>
-                        <div class="about6-tabs" data-aos="fade-right" data-aos-duration="1200">
+                        {{-- <div class="about6-tabs" data-aos="fade-right" data-aos-duration="1200">
                             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                   <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Expertise</button>
@@ -171,7 +101,7 @@
                                     </div>
                                 </div>
                               </div>
-                        </div>
+                        </div> --}}
                         <p data-aos="fade-right" data-aos-duration="1000">Strong advocacy on your behalf, including negotiation with insurance companies or opposing parties to achieve a fair settlement.</p>
                         <div class="div" data-aos="fade-right" data-aos-duration="1200">
                             <a href="about.html" class="about7-btn">Talk to an Attorney <i class="fa-regular fa-arrow-right"></i></a>
@@ -237,7 +167,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1200">
+                {{-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1200">
                     <div class="service6-boxarea">
                         <div class="service6-img">
                             <img src="{{ asset('front/assets/img/images/service6-img3.png') }}" alt="">
@@ -303,7 +233,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
                 <div class="col-lg-12 m-auto" data-aos="fade-up" data-aos-duration="1200">
                     <div class="div text-center">
                         <a href="service1.html" class="about7-btn">View More Practice Areas <i class="fa-regular fa-arrow-right"></i></a>
@@ -315,7 +245,7 @@
 <!--===== SERVICES ENDS =======-->
 
 <!--===== SERVICES-2 STARTS =======-->
-<div class="service-2-section-area sp1">
+{{-- <div class="service-2-section-area sp1">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
@@ -370,7 +300,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 <!--===== SEVICES-2 ENDS =======-->
 
 <!--===== OTERS STARTS =======-->
@@ -727,6 +657,7 @@
         </div>
     </div>
     <div class="row">
+        <div class="col-lg-3"></div>
         <div class="col-lg-6">
             <div class="contact-main-area" data-aos="zoom-in" data-aos-duration="1000">
                 <h3>Send Us A Message</h3>
@@ -771,7 +702,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-3"></div>
+        {{-- <div class="col-lg-6">
             <div class="contact-google-maps" data-aos="zoom-in" data-aos-duration="1200">
                 <div class="mapouter">
                     <div class="gmap_canvas">
@@ -779,7 +711,7 @@
                     </div>
                     </div>
             </div>
-        </div>
+        </div> --}}
     </div>
 </div>
 </div>
